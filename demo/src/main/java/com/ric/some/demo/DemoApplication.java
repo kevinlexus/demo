@@ -18,9 +18,7 @@ public class DemoApplication implements CommandLineRunner {
 		ctx = app.run(args);
 		AdrMng adrMng = ctx.getBean(AdrMng.class);
 		System.out.println("Started...");
-		adrMng.getAllStreets().stream().forEach(t-> {
-			System.out.println(String.valueOf(t.getId())+" "+t.getName());
-		});
+		adrMng.printAllStreets();
 		System.out.println("Ended...");
 		// Завершить выполнение приложения
 		SpringApplication.exit(ctx, () -> 0);

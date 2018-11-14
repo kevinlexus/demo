@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface AdrMng {
 
-    public List<Street> getAllStreets();
+    public void printAllStreets();
 
 }
